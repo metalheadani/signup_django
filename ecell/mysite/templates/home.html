@@ -1,0 +1,9 @@
+{% include 'homenavbar.html' %}
+{% load staticfiles %}
+
+<body>
+<div align="center">
+{% block content %}
+  <h2>Welcome {{ user.get_full_name }}</h2>
+{% endblock %}
+</div>
